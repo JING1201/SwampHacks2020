@@ -1,0 +1,14 @@
+#!python
+#!/usr/bin/env python
+
+import sys
+import pySearchErr
+
+if len(sys.argv) < 2:
+    print("Pls specify a script to run.")
+    sys.exit()
+elif len(sys.argv) > 2:
+    print("Too many command line arguments!")
+    sys.exit()
+
+pySearchErr.searchErr(sys.argv[1])
