@@ -1,0 +1,8 @@
+setup.py
+bin/pySearchErr
+pySearchErr/__init__.py
+pySearchErr.egg-info/PKG-INFO
+pySearchErr.egg-info/SOURCES.txt
+pySearchErr.egg-info/dependency_links.txt
+pySearchErr.egg-info/not-zip-safe
+pySearchErr.egg-info/top_level.txt
