@@ -8,4 +8,8 @@ def err3():
     a = None
     a += 3
 
+def err4():
+    a = {}
+    a[0] += 1
+
 err3()
