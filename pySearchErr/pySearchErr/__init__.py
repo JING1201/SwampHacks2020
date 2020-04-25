@@ -4,10 +4,14 @@ import webbrowser
 
 def searchErr(file):
     try:
-        exec(open(file).read())
+        code = compile(open(file).read(), file, 'exec')
+        exec(code)
     except Exception:
         full_error_msg = traceback.format_exc()
-        print(full_error_msg)
-        err = full_error_msg.split("\n")[-2]
+        split_msg = full_error_msg.split("\n")
+        del split_msg[1]
+        del split_msg[1]
+        print('\n'.join(split_msg))
+        err = split_msg[-2]
         err.replace(' ', '+')
         webbrowser.open_new_tab("https://www.google.com/search?q="+err)

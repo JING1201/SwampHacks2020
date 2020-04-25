@@ -6,7 +6,7 @@ with open(path.join(this_directory, 'README.md'), encoding='utf-8') as f:
     long_description = f.read()
 
 setup(name='pySearchErr',
-      version='0.1.3',
+      version='0.2.0',
       description='Detects Python3 exception and searches for the error on Google automatically',
       long_description=long_description,
       long_description_content_type='text/markdown',
